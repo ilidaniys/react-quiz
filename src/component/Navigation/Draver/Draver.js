@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Draver.module.css'
+import BackDrop from "../../UI/BackDrop/BackDrop";
 
 const link = [
     1, 2, 3
@@ -24,13 +25,16 @@ renderLinks() {
             cls.push(classes.close)
         }
         return (
+            <>
             <nav className={cls.join(' ')}>
                 <ul>
                     {this.renderLinks()}
                 </ul>
             </nav>
+                { this.props.isOpen ? <BackDrop onClick={this.props.onClose}/> : null}
+            </>
         );
     }
-};
+}
 
 export default Draver;
