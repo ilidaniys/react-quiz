@@ -1,5 +1,5 @@
-.Button{
-display: inline-block;
+.Button {
+    display: inline-block;
     padding: 10px 20px;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -10,28 +10,29 @@ display: inline-block;
     font-size: 12px;
 }
 
-.Button:hover{
+.Button:hover {
     outline: none;
 }
 
-.Button:active{
+.Button:active {
     box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
 }
 
-.Button:disabled{
+.Button:disabled {
     background: #ccc;
     color: #000000;
     cursor: not-allowed;
 }
 
-.ErrorBut{
+.ErrorBut {
     background: rgba(240, 87, 108, 1);
 }
-.SuccessBut{
+
+.success {
     background: rgba(161, 240, 69, 1);
 }
 
-.primary{
+.primary {
     background: #2884f6;
     color: white;
 }

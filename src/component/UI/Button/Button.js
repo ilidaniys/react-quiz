@@ -1,11 +1,11 @@
 import React from 'react';
-import './Button.css'
+import classes from './Button.module.css'
 
 const Button = (props) => {
 
     const cls = [
-        'Button',
-        props.type
+        classes.Button,
+        classes[props.type]
     ]
 
     return (
