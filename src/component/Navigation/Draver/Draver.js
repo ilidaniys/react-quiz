@@ -10,10 +10,9 @@ const link = [
 ]
 
 
-
 class Draver extends Component {
 
-    clickHandler = () =>{
+    clickHandler = () => {
         this.props.onClose()
     }
 
